@@ -1,0 +1,18 @@
+DESCRIPTION="GTK+ clone of ACDSee image viewer"
+HOMEPAGE="http://gtksee.berlios.de/"
+SRC_URI="mirror://berlios/gtksee/${P}.tar.gz"
+
+DIFF_EXCLUDES="po"
+
+WANT_AUTOMAKE=1.8	# for gettext-0.17
+USE_DESTDIR=0
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	doicon ${S}/icons/gtksee.xpm
+	make_desktop_entry gtksee "GTK See" gtksee.xpm "Graphics;Viewer"
+
+	doman ${S}/man/gtksee.1
+}
