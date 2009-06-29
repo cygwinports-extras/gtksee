@@ -1,5 +1,5 @@
 category: Graphics
-requires: cygwin libglib1.2_0 libgtk1.2_0 libintl8 libjpeg62 libpng12 libtiff5
+requires: libglib1.2_0 libgtk1.2_0 libintl8 libjpeg62 libpng12 libtiff5
 sdesc: "GTK+ clone of ACD See"
 ldesc: "A port of ACD See, which is a very popular image viewer in M$
 world, for Unix systems in GTK+."
